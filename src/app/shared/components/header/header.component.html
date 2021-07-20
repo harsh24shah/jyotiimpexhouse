@@ -1,0 +1,44 @@
+<header>
+  <!-- Header Start -->
+  <div class="header-area">
+      <div class="main-header header-sticky">
+          <!-- Logo -->
+          <div class="header-left">
+              <div class="logo">
+                  <a routerLink="/"><img src="assets/img/logo/logo.png" alt=""></a>
+              </div>
+              <div class="mobile-menu" (click)="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+              <div class="menu-wrapper d-flex align-items-center" [class.active]="isNavOpen">
+              <div (click)="toggleNav()" class="close-menu">x</div>
+                  <!-- Main-menu -->
+                  <div class="main-menu">
+                      <nav> 
+                          <ul id="navigation">                                                                                          
+                              <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+                              <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                              <!-- <li><a routerLink="/services" routerLinkActive="active">Products & Services</a></li> -->
+                              <!-- <li><a routerLink="/blog" routerLinkActive="active">Blog</a> -->
+                                  <!-- <ul class="submenu">
+                                      <li><a href="blog.html">Blog</a></li>
+                                      <li><a href="blog_details.html">Blog Details</a></li>
+                                      <li><a href="elements.html">Element</a></li>
+                                  </ul> -->
+                              <!-- </li> -->
+                              <li><a routerLink="/contacts" routerLinkActive="active">Contact</a></li>
+                          </ul>
+                      </nav>
+                  </div> 
+              </div>
+          </div> 
+          <div class="header-right d-none d-lg-block">
+              <a href="tel:919825522933" class="header-btn1"><img src="assets/img/icon/call.png" alt=""> +91-9825522933</a>
+              <a href="https://www.indiamart.com/jyoti-impex-house/" target="_blank" class="header-btn2">Make an Order</a>
+          </div>
+      </div>
+  </div>
+  <!-- Header End -->
+</header>
